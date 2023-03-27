@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itlead.product.mapper.ProductMapper">
+
+	<select id="selectProductWithId" parameterType="int" resultType="com.itlead.common.domain.Product">
+  	SELECT * FROM shop_product where id = #{id}
+  </select>
+	
+ 
+</mapper>
